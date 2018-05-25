@@ -6,9 +6,14 @@ function Application() {
         result = Number(a) + Number(b);
         return result;
     }
+    function rest(a, b) {
+        result = (Number(a) - Number(b));
+        return result;
+    }
 
     return {
-        sum: sum
+        sum: sum,
+        rest: rest
     }
 };
 
