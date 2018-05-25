@@ -32,6 +32,32 @@ describe("calculator machine functions works", function () {
         // expect(app.rest(1.03, 1.01)).toBe(0.02);
         // en algún momento necesitaremos un toFixed();
     });
+    it("really multiplies", function () {
+        expect(app.mult(0, 0)).toBe(0);
+        expect(app.mult(1, 0)).toBe(0);
+        // a depurar en el futuro porque pide el signo del cero 
+        expect(app.mult(-1, 0)).toBe(-0);
+        expect(app.mult(-1, -1)).toBe(1);
+        expect(app.mult(1.0, -1)).toBe(-1);
+        expect(app.mult("1", 1)).toBe(1);
+        expect(app.mult("-1", 1)).toBe(-1);
+        // casos para estudiar después
+        // expect(app.rest(1.0, 1.2)).toBe(-0.2);
+        // expect(app.rest(1.03, 1.01)).toBe(0.02);
+        // en algún momento necesitaremos un toFixed();
+    }); it("really divides", function () {
+        expect(app.divide(0, 0)).toBe(NaN);
+        expect(app.divide(1, 0)).toBe(Infinity);
+        expect(app.divide(-1, 0)).toBe(-Infinity);
+        expect(app.divide(-1, -1)).toBe(1);
+        expect(app.divide(1.0, -1)).toBe(-1);
+        expect(app.divide("1", 1)).toBe(1);
+        expect(app.divide("-1", 2)).toBe(-0.5);
+        // casos para estudiar después
+        // expect(app.divide(1.0, 1.2)).toBe(-0.2);
+        // expect(app.divide(1.03, 1.01)).toBe(0.02);
+        // en algún momento necesitaremos un toFixed();
+    });
 
 
 

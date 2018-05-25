@@ -10,10 +10,20 @@ function Application() {
         result = (Number(a) - Number(b));
         return result;
     }
+    function mult(a, b) {
+        result = (Number(a) * Number(b));
+        return result;
+    }
+    function divide(a, b) {
+        result = (Number(a) / Number(b));
+        return result;
+    }
 
     return {
         sum: sum,
-        rest: rest
+        rest: rest,
+        mult: mult,
+        divide: divide
     }
 };
 
