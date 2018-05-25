@@ -17,7 +17,8 @@ describe("calculator machine adds", function () {
         expect(app.sum(1.03, 1.21)).toBe(2.24);
         expect(app.sum(1.03, 1.97)).toBe(3);
         expect(app.sum("1.03", 1.97)).toBe(3);
-        expect(app.sum("a", 1.97)).toBe(3);
+
+
 
 
     });
