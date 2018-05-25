@@ -3,7 +3,7 @@ function Application() {
     var result = "";
 
     function sum(a, b) {
-        result = a + b;
+        result = Number(a) + Number(b);
         return result;
     }
 
