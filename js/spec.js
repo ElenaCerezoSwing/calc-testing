@@ -1,5 +1,5 @@
-import Application from "../main.js";
-let App;
+import Application from "./main.js";
+let app;
 
 beforeEach(function () {
     app = Application();
